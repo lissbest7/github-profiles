@@ -19,7 +19,7 @@ const User = ({ user, repos }) => {
       <div className="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-4 flex flex-col border dark:border-white">
         <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">Repositories:</h3>
         {repos.length > 0 ? (
-          <ul className="grid grid-cols-4 gap-4">
+          <ul className="grid grid-cols-4 gap-4 max-[992px]:grid-cols-2">
           {repos.map((repo) => (
             <li
               key={repo.id}
